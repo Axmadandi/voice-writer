@@ -1,6 +1,8 @@
 import speech_recognition as sr
-r = sr.Recognizer()
+#this is py voice writer project github/axmadandi
+voice = sr.Recognizer()
+
 with sr.Microphone() as source:
     print('Speak .....')
-    audio = r.listen(source)
-print(r.recognize_google(audio))
+    audio = voice.listen(source)
+print(voice.recognize_google(audio))
